@@ -43,6 +43,7 @@ install -vDm 644 %{S:3} -t %{buildroot}%{_unitdir}
 %{_bindir}/%{name}
 %{_bindir}/generate-domains-blocklist
 %{_sysconfdir}/%{name}
-%{_unitdir}/dnscrypt-proxy.service
-%{_unitdir}/dnscrypt-proxy.socket
+%config(noreplace) %{_sysconfdir}/%{name}/%{name}.toml
+%config(noreplace) %{_sysconfdir}/%{name}/*.txt
+%config(noreplace) %{_unitdir}/dnscrypt-proxy.service
 %{_datadir}/dnscrypt-proxy/
