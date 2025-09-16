@@ -2,7 +2,7 @@
 
 Name:		dnscrypt-proxy
 Version:	2.1.14
-Release:	1
+Release:	2
 Source0:	https://github.com/DNSCrypt/dnscrypt-proxy/archive/%{version}/%{name}-%{version}.tar.gz
 Source1:	%{name}-%{version}-vendor.tar.gz
 Source2:	%{name}.service
